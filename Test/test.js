@@ -24,8 +24,23 @@ var application = new Vue({
 var app3 = new Vue({
     el: '#application',
     data: {
-        JavaScript:1,
-        Python:0.7,
-        Java:1.3,
+        Limbaj:{
+            'JavaScript':1,
+            'Python':0.7,
+            'Java':1.3,
+        },
+        Experienta:{
+             1:10000,
+             2:12000,
+             3:13000,
+             4:14000,
+             5:15000,
+    },
+},
+    watch: {
+        salariul: function (val) {
+            this.Limbaj = val;
+            this.Experienta = val * Experienta;
+        },
     }
 })
