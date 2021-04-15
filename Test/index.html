@@ -19,16 +19,19 @@
     </div>
     <div id="app3">
         <form>
-		<p>Alege limbajul de programare</p>
-		<label><input type="radio" v-model="JavaScript">JavaScript</label>
-		<label><input type="radio" v-model="Python"> Python</label>	
-		<label><input type="radio" v-model="Java"> Java </label>
-		</div>
-            	<label>Experienta</label>
-            	<input type="text" v-model="Experienta"></input>
-           	 <label>ani</label>
+	    <p>Alege limbajul de programare</p>
+            <label><input type="radio" v-model="Limbaj">JavaScript</label>
+	    <label><input type="radio" v-model="Limbaj"> Python</label>	
+	    <label><input type="radio" v-model="Limbaj"> Java </label></br>
+            <label>Experienta</label>
+            <input type="text" name="Experienta" v-model="Experienta"></input>
+            <label>ani</label><br>
+            <label>Salariul</label>= 
+            {{ salariul }}
 	</form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="test.js"></script>
 </body>
 </html>
+
